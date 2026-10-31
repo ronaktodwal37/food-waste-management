@@ -1,0 +1,7 @@
+{
+  "name": "Zero-Waste Food Sharing & Redistribution Platform",
+  "description": "Connect food donors, verified NGOs, volunteers, and community members to eliminate food waste and ensure rapid, safe redistribution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

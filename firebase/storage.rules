@@ -1,0 +1,44 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isImageFile() {
+      return request.resource.contentType.matches('image/.*') &&
+             request.resource.size < 5 * 1024 * 1024; // 5MB max
+    }
+
+    function isPdfOrImageDoc() {
+      return (request.resource.contentType.matches('image/.*') ||
+              request.resource.contentType == 'application/pdf') &&
+             request.resource.size < 10 * 1024 * 1024; // 10MB max
+    }
+
+    // Public food donation photos
+    match /foodImages/{imageId} {
+      allow read: if true;
+      allow write: if isAuthenticated() && isImageFile();
+    }
+
+    // Organization logos
+    match /orgLogos/{logoId} {
+      allow read: if true;
+      allow write: if isAuthenticated() && isImageFile();
+    }
+
+    // Profile photos
+    match /profilePhotos/{userId}/{photoId} {
+      allow read: if true;
+      allow write: if isAuthenticated() && request.auth.uid == userId && isImageFile();
+    }
+
+    // NGO Verification documents (Confidential - only owner and admins)
+    match /verificationDocs/{ngoId}/{docId} {
+      allow read: if isAuthenticated() && (request.auth.uid == ngoId || request.auth.token.role == 'ADMIN');
+      allow write: if isAuthenticated() && request.auth.uid == ngoId && isPdfOrImageDoc();
+    }
+  }
+}

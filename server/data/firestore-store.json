@@ -1,0 +1,543 @@
+{
+  "users": {
+    "user-admin-1": {
+      "uid": "user-admin-1",
+      "email": "admin@zerowaste.org",
+      "displayName": "System Administrator",
+      "role": "ADMIN",
+      "status": "ACTIVE",
+      "isApproved": true,
+      "createdAt": "2026-10-31T02:09:10.250Z",
+      "updatedAt": "2026-10-31T02:09:10.251Z"
+    },
+    "user-donor-1": {
+      "uid": "user-donor-1",
+      "email": "greenkitchen@bistro.com",
+      "displayName": "Green Leaf Bistro",
+      "role": "FOOD_DONOR",
+      "status": "ACTIVE",
+      "isApproved": true,
+      "createdAt": "2026-10-31T02:09:10.251Z",
+      "updatedAt": "2026-10-31T02:09:10.251Z"
+    },
+    "user-ngo-1": {
+      "uid": "user-ngo-1",
+      "email": "contact@hopehaven.org",
+      "displayName": "Hope Haven Food Bank",
+      "role": "NGO",
+      "status": "ACTIVE",
+      "isApproved": true,
+      "createdAt": "2026-10-31T02:09:10.251Z",
+      "updatedAt": "2026-10-31T02:09:10.251Z"
+    },
+    "user-ngo-pending": {
+      "uid": "user-ngo-pending",
+      "email": "director@communitycare.org",
+      "displayName": "Community Care Shelter",
+      "role": "NGO",
+      "status": "ACTIVE",
+      "isApproved": true,
+      "createdAt": "2026-10-31T02:09:10.251Z",
+      "updatedAt": "2026-10-31T02:10:45.357Z"
+    },
+    "user-vol-1": {
+      "uid": "user-vol-1",
+      "email": "alex.volunteer@gmail.com",
+      "displayName": "Alex Courier",
+      "role": "VOLUNTEER",
+      "status": "ACTIVE",
+      "isApproved": true,
+      "createdAt": "2026-10-31T02:09:10.251Z",
+      "updatedAt": "2026-10-31T02:09:10.251Z"
+    },
+    "user-comm-1": {
+      "uid": "user-comm-1",
+      "email": "maria.resident@gmail.com",
+      "displayName": "Maria Santos",
+      "role": "COMMUNITY_USER",
+      "status": "ACTIVE",
+      "isApproved": true,
+      "createdAt": "2026-10-31T02:09:10.251Z",
+      "updatedAt": "2026-10-31T02:09:10.251Z"
+    }
+  },
+  "organizations": {
+    "org-donor-1": {
+      "orgId": "org-donor-1",
+      "ownerUid": "user-donor-1",
+      "type": "DONOR",
+      "name": "Green Leaf Bistro & Catering",
+      "registrationNumber": "REG-FD-89214",
+      "isVerified": true,
+      "address": "742 Evergreen Terrace, Downtown",
+      "location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "geohash": "9q8yyk8ytp",
+      "dietaryPreferences": [
+        "GENERAL",
+        "VEGETARIAN"
+      ],
+      "createdAt": "2026-10-31T02:09:10.251Z"
+    },
+    "org-ngo-1": {
+      "orgId": "org-ngo-1",
+      "ownerUid": "user-ngo-1",
+      "type": "NGO",
+      "name": "Hope Haven Food Bank",
+      "registrationNumber": "NGO-TAX-55219",
+      "isVerified": true,
+      "address": "1050 Mission Street, Civic Center",
+      "location": {
+        "latitude": 37.7812,
+        "longitude": -122.4111
+      },
+      "geohash": "9q8yymygqw",
+      "serviceRadiusKm": 15,
+      "receivingCapacityServings": 250,
+      "currentDailyAllocatedServings": 75,
+      "dietaryPreferences": [
+        "GENERAL",
+        "VEGETARIAN",
+        "HALAL"
+      ],
+      "verificationDocUrls": [
+        "https://example.com/docs/hope-haven-501c3.pdf"
+      ],
+      "createdAt": "2026-10-31T02:09:10.251Z",
+      "updatedAt": "2026-10-31T02:09:39.145Z"
+    },
+    "org-ngo-pending": {
+      "orgId": "org-ngo-pending",
+      "ownerUid": "user-ngo-pending",
+      "type": "NGO",
+      "name": "Community Care Shelter",
+      "registrationNumber": "NGO-TAX-89100",
+      "isVerified": true,
+      "address": "450 Howard Street",
+      "location": {
+        "latitude": 37.7891,
+        "longitude": -122.3982
+      },
+      "geohash": "9q8yyz237n",
+      "serviceRadiusKm": 10,
+      "receivingCapacityServings": 120,
+      "currentDailyAllocatedServings": 0,
+      "dietaryPreferences": [
+        "GENERAL"
+      ],
+      "verificationDocUrls": [
+        "https://example.com/docs/community-care-license.pdf"
+      ],
+      "createdAt": "2026-10-31T02:09:10.251Z",
+      "verifiedAt": "2026-10-31T02:10:45.357Z",
+      "verifiedByAdminUid": "user-admin-1",
+      "updatedAt": "2026-10-31T02:10:45.357Z"
+    }
+  },
+  "volunteerProfiles": {
+    "user-vol-1": {
+      "volunteerUid": "user-vol-1",
+      "totalCredits": 190,
+      "totalDeliveries": 5,
+      "totalHoursVolunteered": 7.3,
+      "totalMealsRedistributed": 195,
+      "serviceAreaRadiusKm": 12,
+      "homeLocation": {
+        "latitude": 37.7765,
+        "longitude": -122.4172
+      },
+      "geohash": "9q8yym4806",
+      "vehicleType": "BICYCLE",
+      "availabilityStatus": "AVAILABLE",
+      "createdAt": "2026-10-31T02:09:10.251Z",
+      "updatedAt": "2026-10-31T02:10:26.463Z"
+    }
+  },
+  "foodListings": {
+    "listing-sample-1": {
+      "listingId": "listing-sample-1",
+      "donorUid": "user-donor-1",
+      "donorOrgId": "org-donor-1",
+      "foodName": "Gourmet Vegetable Lasagna & Roasted Squash",
+      "category": "COOKED_MEALS",
+      "totalServings": 80,
+      "remainingServings": 20,
+      "unit": "meals",
+      "preparationTime": "2026-10-31T00:09:10.251Z",
+      "pickupDeadline": "2026-10-31T08:09:10.251Z",
+      "storageCondition": "HOT_HEATED",
+      "allergens": [
+        "DAIRY",
+        "GLUTEN"
+      ],
+      "safetyDeclarationSigned": true,
+      "pickupAddress": "742 Evergreen Terrace, Downtown",
+      "pickupLocation": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "geohash": "9q8yyk8ytp",
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=600&q=80"
+      ],
+      "status": "PARTIALLY_ALLOCATED",
+      "createdAt": "2026-10-31T01:09:10.251Z",
+      "updatedAt": "2026-10-31T02:09:39.145Z"
+    },
+    "listing-sample-2": {
+      "listingId": "listing-sample-2",
+      "donorUid": "user-donor-1",
+      "donorOrgId": "org-donor-1",
+      "foodName": "Fresh Artisanal Sourdough & Pastries",
+      "category": "BAKERY",
+      "totalServings": 45,
+      "remainingServings": 45,
+      "unit": "portions",
+      "preparationTime": "2026-10-30T22:09:10.251Z",
+      "pickupDeadline": "2026-10-31T10:09:10.251Z",
+      "storageCondition": "AMBIENT",
+      "allergens": [
+        "GLUTEN"
+      ],
+      "safetyDeclarationSigned": true,
+      "pickupAddress": "742 Evergreen Terrace, Downtown",
+      "pickupLocation": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "geohash": "9q8yyk8ytp",
+      "imageUrls": [
+        "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
+      ],
+      "status": "AVAILABLE",
+      "createdAt": "2026-10-31T02:09:10.251Z",
+      "updatedAt": "2026-10-31T02:09:10.251Z"
+    }
+  },
+  "foodAllocations": {
+    "alloc-1": {
+      "allocationId": "alloc-1",
+      "listingId": "listing-sample-1",
+      "donorUid": "user-donor-1",
+      "ngoUid": "user-ngo-1",
+      "ngoOrgId": "org-ngo-1",
+      "allocatedServings": 45,
+      "status": "IN_TRANSIT",
+      "allocatedAt": "2026-10-31T01:39:10.251Z",
+      "updatedAt": "2026-10-31T02:09:10.251Z"
+    },
+    "alloc-1793412579145-464l5": {
+      "allocationId": "alloc-1793412579145-464l5",
+      "listingId": "listing-sample-1",
+      "donorUid": "user-donor-1",
+      "ngoUid": "user-ngo-1",
+      "ngoOrgId": "org-ngo-1",
+      "ngoName": "Hope Haven Food Bank",
+      "foodName": "Gourmet Vegetable Lasagna & Roasted Squash",
+      "allocatedServings": 15,
+      "status": "DELIVERED",
+      "allocatedAt": "2026-10-31T02:09:39.145Z",
+      "updatedAt": "2026-10-31T02:10:26.462Z"
+    }
+  },
+  "volunteerTasks": {
+    "task-1": {
+      "taskId": "task-1",
+      "allocationId": "alloc-1",
+      "listingId": "listing-sample-1",
+      "volunteerUid": "user-vol-1",
+      "donorLocation": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "donorAddress": "742 Evergreen Terrace, Downtown",
+      "ngoLocation": {
+        "latitude": 37.7812,
+        "longitude": -122.4111
+      },
+      "ngoAddress": "1050 Mission Street, Civic Center",
+      "estimatedDistanceKm": 1.2,
+      "isUrgent": false,
+      "status": "IN_TRANSIT",
+      "createdAt": "2026-10-31T01:39:10.251Z",
+      "acceptedAt": "2026-10-31T01:49:10.251Z"
+    },
+    "task-1793412579145-ds9g4": {
+      "taskId": "task-1793412579145-ds9g4",
+      "allocationId": "alloc-1793412579145-464l5",
+      "listingId": "listing-sample-1",
+      "foodName": "Gourmet Vegetable Lasagna & Roasted Squash",
+      "servings": 15,
+      "category": "COOKED_MEALS",
+      "storageCondition": "HOT_HEATED",
+      "donorUid": "user-donor-1",
+      "donorAddress": "742 Evergreen Terrace, Downtown",
+      "donorLocation": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "ngoUid": "user-ngo-1",
+      "ngoName": "Hope Haven Food Bank",
+      "ngoAddress": "1050 Mission Street, Civic Center",
+      "ngoLocation": {
+        "latitude": 37.7812,
+        "longitude": -122.4111
+      },
+      "estimatedDistanceKm": 1,
+      "isUrgent": false,
+      "pickupDeadline": "2026-10-31T08:09:10.251Z",
+      "status": "COMPLETED",
+      "volunteerUid": "user-vol-1",
+      "createdAt": "2026-10-31T02:09:39.145Z",
+      "updatedAt": "2026-10-31T02:10:26.462Z",
+      "deliveryId": "deliv-1793412591498-b5gkb",
+      "acceptedAt": "2026-10-31T02:09:51.499Z",
+      "completedAt": "2026-10-31T02:10:26.461Z"
+    }
+  },
+  "deliveries": {
+    "deliv-1": {
+      "deliveryId": "deliv-1",
+      "taskId": "task-1",
+      "volunteerUid": "user-vol-1",
+      "donorUid": "user-donor-1",
+      "ngoUid": "user-ngo-1",
+      "status": "IN_TRANSIT",
+      "pickupVerifiedAt": "2026-10-31T01:59:10.251Z",
+      "deliveryVerifiedAt": null,
+      "discrepancyReported": false,
+      "createdAt": "2026-10-31T01:39:10.251Z"
+    },
+    "deliv-1793412591498-b5gkb": {
+      "deliveryId": "deliv-1793412591498-b5gkb",
+      "taskId": "task-1793412579145-ds9g4",
+      "allocationId": "alloc-1793412579145-464l5",
+      "volunteerUid": "user-vol-1",
+      "donorUid": "user-donor-1",
+      "ngoUid": "user-ngo-1",
+      "status": "COMPLETED",
+      "pickupVerifiedAt": "2026-10-31T02:09:59.604Z",
+      "deliveryVerifiedAt": "2026-10-31T02:10:26.461Z",
+      "discrepancyReported": false,
+      "createdAt": "2026-10-31T02:09:51.498Z",
+      "updatedAt": "2026-10-31T02:10:26.462Z"
+    }
+  },
+  "deliveryVerifications": {
+    "deliv-1793412591498-b5gkb": {
+      "deliveryId": "deliv-1793412591498-b5gkb",
+      "pickupOtpHashed": "1d91aed826a03043f854ede503e5760c973cc118e4cbb33d02697b8e57180988",
+      "pickupExpiresAt": "2026-10-31T05:09:51.498Z",
+      "pickupAttempts": 0,
+      "pickupUsed": true,
+      "deliveryOtpHashed": "e7e5c660349cf4698ca79c00f43a8f1d18e6be6f6f85d2d15b02838624e63734",
+      "deliveryExpiresAt": "2026-10-31T05:09:51.498Z",
+      "deliveryAttempts": 0,
+      "deliveryUsed": true,
+      "createdAt": "2026-10-31T02:09:51.499Z",
+      "updatedAt": "2026-10-31T02:10:26.462Z",
+      "pickupVerifiedAt": "2026-10-31T02:09:59.604Z",
+      "deliveryVerifiedAt": "2026-10-31T02:10:26.461Z"
+    }
+  },
+  "volunteerCredits": {
+    "cred-1": {
+      "creditId": "cred-1",
+      "volunteerUid": "user-vol-1",
+      "deliveryId": "deliv-prior-1",
+      "amount": 50,
+      "reason": "Medium distance delivery completed (2.4 km)",
+      "idempotencyKey": "delivery_deliv-prior-1",
+      "createdAt": "2026-10-30T02:09:10.251Z"
+    },
+    "cred-2": {
+      "creditId": "cred-2",
+      "volunteerUid": "user-vol-1",
+      "deliveryId": "deliv-prior-2",
+      "amount": 110,
+      "reason": "Urgent long distance delivery completed (6.1 km + urgent bonus)",
+      "idempotencyKey": "delivery_deliv-prior-2",
+      "createdAt": "2026-10-30T14:09:10.251Z"
+    },
+    "cred-1793412626462-hq34n": {
+      "creditId": "cred-1793412626462-hq34n",
+      "volunteerUid": "user-vol-1",
+      "deliveryId": "deliv-1793412591498-b5gkb",
+      "amount": 30,
+      "reason": "Short distance delivery (1 km)",
+      "idempotencyKey": "delivery_deliv-1793412591498-b5gkb",
+      "createdAt": "2026-10-31T02:10:26.462Z",
+      "updatedAt": "2026-10-31T02:10:26.463Z"
+    }
+  },
+  "creditRules": {
+    "rule-default": {
+      "ruleId": "rule-default",
+      "baseShortDistanceCredits": 30,
+      "baseMediumDistanceCredits": 50,
+      "baseLongDistanceCredits": 80,
+      "urgentBonusCredits": 20,
+      "isActive": true,
+      "updatedAt": "2026-10-31T02:09:10.251Z"
+    }
+  },
+  "badges": {
+    "badge-first-rescue": {
+      "badgeId": "badge-first-rescue",
+      "title": "First Rescue",
+      "description": "Completed your very first food rescue mission",
+      "icon": "Award",
+      "minDeliveries": 1
+    },
+    "badge-bronze": {
+      "badgeId": "badge-bronze",
+      "title": "Bronze Courier",
+      "description": "Rescued and delivered over 50 meals",
+      "icon": "ShieldCheck",
+      "minMeals": 50
+    },
+    "badge-silver": {
+      "badgeId": "badge-silver",
+      "title": "Silver Hero",
+      "description": "Rescued and delivered over 150 meals",
+      "icon": "Sparkles",
+      "minMeals": 150
+    }
+  },
+  "volunteerBadges": {
+    "vb-1": {
+      "id": "vb-1",
+      "volunteerUid": "user-vol-1",
+      "badgeId": "badge-first-rescue",
+      "awardedAt": "2026-10-30T02:09:10.251Z"
+    },
+    "vb-2": {
+      "id": "vb-2",
+      "volunteerUid": "user-vol-1",
+      "badgeId": "badge-silver",
+      "awardedAt": "2026-10-30T14:09:10.251Z"
+    },
+    "vb-1793412626463-2": {
+      "volunteerUid": "user-vol-1",
+      "badgeId": "badge-bronze",
+      "awardedAt": "2026-10-31T02:10:26.463Z",
+      "updatedAt": "2026-10-31T02:10:26.463Z"
+    }
+  },
+  "communityRequests": {
+    "comm-req-1": {
+      "requestId": "comm-req-1",
+      "requesterUid": "user-comm-1",
+      "requesterName": "Maria Santos",
+      "title": "Family of 4 needing fresh vegetables / pantry items",
+      "category": "PRODUCE",
+      "servingsNeeded": 4,
+      "urgency": "HIGH",
+      "status": "OPEN",
+      "location": {
+        "latitude": 37.7785,
+        "longitude": -122.415
+      },
+      "address": "Market St & 8th, San Francisco",
+      "notes": "No shellfish allergies. Available for pickup between 4-7 PM.",
+      "createdAt": "2026-10-31T02:09:10.251Z"
+    }
+  },
+  "notifications": {},
+  "reports": {
+    "rep-1": {
+      "reportId": "rep-1",
+      "reporterUid": "user-vol-1",
+      "targetId": "listing-historical-old",
+      "targetType": "LISTING",
+      "reason": "Temperature break during hot holding pickup",
+      "details": "Container was below 40C upon pickup arrival; reported and safely composted.",
+      "status": "RESOLVED",
+      "createdAt": "2026-10-29T02:09:10.251Z"
+    }
+  },
+  "impactRecords": {
+    "global-impact": {
+      "recordId": "global-impact",
+      "totalMealsRedistributed": 3855,
+      "totalCo2PreventedKg": 9638,
+      "totalCompletedDeliveries": 143,
+      "activeNgosCount": 18,
+      "activeDonorsCount": 24,
+      "activeVolunteersCount": 47,
+      "updatedAt": "2026-10-31T02:10:26.463Z"
+    }
+  },
+  "auditLogs": {
+    "log-init": {
+      "logId": "log-init",
+      "action": "PLATFORM_BOOTSTRAP",
+      "performedBy": "SYSTEM",
+      "timestamp": "2026-10-31T02:09:10.251Z",
+      "details": {
+        "phase": "Complete Platform Integration"
+      }
+    },
+    "audit-1793412579146-okf6q": {
+      "logId": "audit-1793412579146-okf6q",
+      "action": "ALLOCATION_CLAIMED",
+      "performedBy": "user-ngo-1",
+      "timestamp": "2026-10-31T02:09:39.146Z",
+      "details": {
+        "listingId": "listing-sample-1",
+        "servings": 15
+      },
+      "updatedAt": "2026-10-31T02:09:39.146Z",
+      "createdAt": "2026-10-31T02:09:39.146Z"
+    },
+    "audit-1793412591499-tfdod": {
+      "logId": "audit-1793412591499-tfdod",
+      "action": "VOLUNTEER_TASK_ACCEPTED",
+      "performedBy": "user-vol-1",
+      "timestamp": "2026-10-31T02:09:51.499Z",
+      "details": {
+        "taskId": "task-1793412579145-ds9g4",
+        "deliveryId": "deliv-1793412591498-b5gkb"
+      },
+      "updatedAt": "2026-10-31T02:09:51.499Z",
+      "createdAt": "2026-10-31T02:09:51.499Z"
+    },
+    "audit-1793412599604-02m7c": {
+      "logId": "audit-1793412599604-02m7c",
+      "action": "PICKUP_OTP_VERIFIED",
+      "performedBy": "user-vol-1",
+      "timestamp": "2026-10-31T02:09:59.604Z",
+      "details": {
+        "deliveryId": "deliv-1793412591498-b5gkb"
+      },
+      "updatedAt": "2026-10-31T02:09:59.604Z",
+      "createdAt": "2026-10-31T02:09:59.604Z"
+    },
+    "audit-1793412626463-48a1g": {
+      "logId": "audit-1793412626463-48a1g",
+      "action": "DELIVERY_OTP_VERIFIED",
+      "performedBy": "user-vol-1",
+      "timestamp": "2026-10-31T02:10:26.463Z",
+      "details": {
+        "deliveryId": "deliv-1793412591498-b5gkb",
+        "creditsAwarded": 30
+      },
+      "updatedAt": "2026-10-31T02:10:26.463Z",
+      "createdAt": "2026-10-31T02:10:26.463Z"
+    },
+    "audit-1793412645357-4pgur": {
+      "logId": "audit-1793412645357-4pgur",
+      "action": "NGO_APPROVED",
+      "performedBy": "user-admin-1",
+      "timestamp": "2026-10-31T02:10:45.357Z",
+      "details": {
+        "ngoUid": "user-ngo-pending",
+        "orgId": "org-ngo-pending"
+      },
+      "updatedAt": "2026-10-31T02:10:45.357Z",
+      "createdAt": "2026-10-31T02:10:45.357Z"
+    }
+  }
+}
