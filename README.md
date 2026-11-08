@@ -16,7 +16,7 @@ Phase 1 establishes the complete foundation, architecture, and developer workflo
 
 ---
 
-## 2. 
+## 2. Folders Structure
 
 ```
 zero-waste-platform/
