@@ -97,7 +97,7 @@ zero-waste-platform/
 
 ---
 
-## 4. macOS Terminal (zsh) Commands
+## 4. 
 
 Open Terminal on macOS (`Terminal.app` or iTerm2):
 
