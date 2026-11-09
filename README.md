@@ -1,4 +1,4 @@
-# Zero-Waste Food Sharing & Redistribution Platform
+# Zero- Food Sharing & Redistribution Platform
 
 > A production-ready, full-stack web application connecting food businesses, verified NGOs, volunteers, and community members to eliminate food waste and ensure rapid, safe redistribution.
 
